@@ -1,0 +1,76 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+  }
+  h1, h6 {
+    font-family: Shrikhand, Roboto, sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  footer {
+    display: block;
+    background-color: #353535;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    padding: 25px;
+    color: white;
+  }
+
+footer {
+    text-align: center;
+  }
+}
+footer h3 {
+  font-family: "Shrikhand", "sans-serif";
+  padding: 5px 0 20px 0;
+}
+
+footer a {
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  padding: 5px 0 5px 0;
+}
+
+
+.crt {
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px #aaa;
+  margin: 20px;
+  position: relative;
+  background: #fff;
+}
+
+.crt img {
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+}
+.new {
+  color: #008766;
+  background: #99E2D0;
+  border: 5px solid #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+
+.imgh{
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
