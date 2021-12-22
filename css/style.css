@@ -60,7 +60,63 @@ body, html {
     box-shadow: 4px 4px 6px #000;
   }
 
-
+  .Fonctionnement {
+    margin-bottom: 50px;
+  }
+  .Fonctionnement h2 {
+    padding: 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    .Fonctionnement h2 {
+      text-align: center;
+    }
+  }
+  .Fonctionnement__A {
+    list-style-type: none;
+  }
+  @media screen and (min-width: 768px) {
+    .Fonctionnement__A {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .Fonctionnement__A li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 25px;
+    margin: 15px 20px 15px 30px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px 2px #c4c4c4;
+    background-color: #f5f5f5;
+  }
+  .operation__A li p {
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  .Fonctionnement__A li:hover {
+    background: #f2eafb;
+  }
+  .Fonctionnement__A li:hover .fas {
+    color: #9356dc;
+  }
+  .Fonctionnement__A--nbr {
+    background-color: #9356dc;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 9px;
+    margin-left: -40px;
+  }
+  .Fonctionnement__A--icon {
+    color: grey;
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
 
 
 
