@@ -117,7 +117,10 @@ body, html {
     font-size: 1.2rem;
     margin-left: 20px;
   }
-
+  .gap{
+    column-gap: 20px;
+  }
+  
   @media screen and (min-width: 768px) {
     .R__title {
       width: 100%;
@@ -166,12 +169,10 @@ body, html {
   cursor: pointer;
 }
 .fill:hover {
-  animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -236,7 +237,6 @@ footer {
     margin: 0;
     border: 0;
     font-size: 100%;
-    vertical-align: baseline;
     padding: 25px;
     color: white;
   }
@@ -244,7 +244,6 @@ footer {
 footer {
     text-align: center;
   }
-}
 footer h3 {
   font-family:"Shrikhand", "sans-serif";
   padding: 5px 0 20px 0;
