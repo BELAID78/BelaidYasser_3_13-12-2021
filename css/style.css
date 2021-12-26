@@ -295,6 +295,17 @@ footer {
 footer {
     text-align: center;
   }
+
+  @media screen and (max-width: 768px){
+    footer{
+      text-align:left;}
+    footer h3{
+      text-align:left;
+      margin-left: 40px;
+    
+    }
+  }
+
 footer h3 {
   font-family:"Shrikhand", "sans-serif";
   padding: 5px 0 20px 0;
