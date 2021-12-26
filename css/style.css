@@ -213,8 +213,6 @@ body, html {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-
-
 .crt {
   border-radius: 25px;
   box-shadow: 4px 4px 6px #aaa;
@@ -258,7 +256,21 @@ body, html {
   padding: 10px;
 }
 
+a:link {
+  text-decoration: none;
+  }
+.DN a:link {
+  text-decoration: none;
+  color: #000;
+}
 
+.DN a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.DN a:active {
+  color: #000;
+text-decoration: none;}
 
 
 
