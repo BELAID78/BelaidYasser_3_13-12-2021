@@ -440,3 +440,32 @@ footer ul li {
 .text__1:hover .fa-check-circle {
   transform: rotate(360deg);
 }
+
+.btn__cmd button {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  margin: 30px 0;
+  padding: 20px;
+  width: 50%;
+}
+@media screen and (min-width: 1280px) {
+  .btn__cmd button {
+    width: 25%;
+  }
+}
+.btn__cmd button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
+}
+
+.btn__cmd {
+  display: flex;
+  justify-content: center;
+}
