@@ -380,7 +380,17 @@ footer ul li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: padding-right 450ms ease-in-out;
 }
+.text__1:hover {
+  padding-right: 75px;
+}
+.text__1:hover .tr {
+  opacity: 1;
+  transform: translate(-50px);
+}
+
+
 .text__end {
   display: flex;
   justify-content: space-between;
@@ -406,4 +416,27 @@ footer ul li {
 
 .text__1 h4 {
   margin: 0;
+}
+.tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 50px;
+  height: 63px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+}
+.tr .fa-check-circle {
+  color: #fff;
+  transition: transform 500ms ease-in-out;
+}
+.text__1:hover .fa-check-circle {
+  transform: rotate(360deg);
 }
