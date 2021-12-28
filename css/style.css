@@ -350,15 +350,14 @@ footer ul li {
     justify-content: space-around;
   }
 }
+
 .entrees {
   animation: fadein 3s ease-in-out;
 }
-@media screen and (min-width: 1280px) {
-  .entrees {
-    width: 400px;
-  }
-}
-.entrees h3 {
+
+
+
+.entrees h3 .plats h3 .desserts h3 {
   padding-left: 10px;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -381,7 +380,7 @@ footer ul li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: padding-right 450ms ease-in-out;
+  transition: padding-right 350ms ease-in-out;
 }
 .text__1:hover {
   padding-right: 75px;
@@ -412,7 +411,8 @@ footer ul li {
 }
 
 .text__end span {
-  margin-right: 5px;
+  margin-right: 15px;
+  margin-left: 10px;
 }
 
 .text__1 h4 {
@@ -423,8 +423,8 @@ footer ul li {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 50px;
-  height: 63px;
+  width: 20px;
+  height: 50%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
@@ -432,11 +432,11 @@ footer ul li {
   right: -50px;
   top: 0;
   opacity: 0;
-  transition: transform 330ms ease-in-out;
+  transition: transform 350ms ease-in-out;
 }
 .tr .fa-check-circle {
   color: #fff;
-  transition: transform 500ms ease-in-out;
+  transition: transform 350ms ease-in-out;
 }
 .text__1:hover .fa-check-circle {
   transform: rotate(360deg);
