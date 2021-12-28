@@ -351,6 +351,7 @@ footer ul li {
   }
 }
 
+
 .entrees {
   animation: fadein 3s ease-in-out;
 }
@@ -369,17 +370,7 @@ footer ul li {
     opacity: 1;
   }
 }
-@keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 @media screen and (min-width: 1280px) {
   .plats {
     width: 400px;
@@ -405,10 +396,7 @@ footer ul li {
     justify-content: space-around;
   }
 }
-
-
-
-.entrees h3 .plats h3 .desserts h3 {
+.menu h3 {
   padding-left: 10px;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -520,4 +508,82 @@ footer ul li {
 .btn__cmd {
   display: flex;
   justify-content: center;
+}
+
+
+
+
+
+
+
+
+.loading_spinner {
+ background-color: whitesmoke;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: Shrikhand, sans-serif;
+  font-size: xX-large;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  animation: out 3s ease-in-out 3s forwards;
+}
+
+.loader__food {
+  vertical-align: middle;
+ justify-items: center;
+ justify-content: center;
+ animation: flash 3s;
+  
+}
+
+
+.loader__food span {
+  display: inline;
+  width: 5px;
+  height: 20px;
+  padding-right: 1em;
+  animation: slideInLeft 3s linear infinite;
+	background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  justify-items: center;
+  text-transform: uppercase;
+
+}
+
+
+.loader__fork{
+  margin-top: 16px;
+  animation: flash 3s ;
+}
+
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}
+
+@keyframes out {
+  100% { opacity:0; }
 }
