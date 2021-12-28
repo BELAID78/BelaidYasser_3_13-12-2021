@@ -361,7 +361,25 @@ footer ul li {
 .desserts {
   animation: fadein 9s ease-in-out;
 }
-
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 1280px) {
   .plats {
     width: 400px;
